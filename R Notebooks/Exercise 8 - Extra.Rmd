@@ -1,0 +1,50 @@
+---
+title: "Exercise 8 - Extra"
+output: 
+---
+
+```{r}
+library(ggplot2)
+library(ggsci)
+
+library(rgl)
+glplot3d = function (f, lims = c(-1,1,-1,1), nstep = 250) {
+  
+  stepx = (lims[2] - lims[1]) / nstep
+  stepy = (lims[4] - lims[3]) / nstep
+  
+  x = seq(from = lims[1], to = lims[2], by = stepx)
+  y = seq(from = lims[3], to = lims[4], by = stepy)
+  z = matrix(nrow = length(x), ncol = length(y))
+  
+  for (i in 1:length(x)) {
+    for (j in 1:length(y)) {
+       z[i,j] = f(x[i], y[j])
+    }
+  }
+  
+  z[is.infinite(z)] = NaN # reduce infinite values to NaN for plot
+  
+  zlim = range(z, finite = TRUE)
+  zlen = nstep + 1
+
+  colorlut = heat.colors(zlen) # height color lookup table
+  col = colorlut[round((z - zlim[1])/(zlim[2] - zlim[1]) * zlen) + 1] # assign colors to heights for each point
+
+  persp3d(x, y, z, color = col, back = "filled")
+}
+```
+
+*Problem 3*
+
+```{r}
+f4 = function(x, y) {
+  if (abs(x) < 10^-5 && abs(y) < 10^-5) {
+    return(0)
+  } else {
+    return((x * y) / (abs(x) + abs(y)))
+  }
+}
+
+glplot3d(f4)
+```

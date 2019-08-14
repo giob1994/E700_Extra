@@ -1,0 +1,109 @@
+---
+title: "Exercise 14 - Extra"
+output: 
+---
+
+```{r}
+library(ggplot2)
+library(ggsci)
+
+library(rgl)
+glplot3d = function (f, lims = c(-1,1,-1,1), nstep = 250) {
+  
+  stepx = (lims[2] - lims[1]) / nstep
+  stepy = (lims[4] - lims[3]) / nstep
+  
+  x = seq(from = lims[1], to = lims[2], by = stepx)
+  y = seq(from = lims[3], to = lims[4], by = stepy)
+  z = matrix(nrow = length(x), ncol = length(y))
+  
+  for (i in 1:length(x)) {
+    for (j in 1:length(y)) {
+       z[i,j] = f(x[i], y[j])
+    }
+  }
+  
+  z[is.infinite(z)] = NaN # reduce infinite values to NaN for plot
+  
+  zlim = range(z, finite = TRUE)
+  zlen = nstep + 1
+
+  colorlut = heat.colors(zlen) # height color lookup table
+  col = colorlut[round((z - zlim[1])/(zlim[2] - zlim[1]) * zlen) + 1] # assign colors to heights for each point
+
+  persp3d(x, y, z, color = col, back = "filled")
+}
+```
+
+*Problem 1*
+
+```{r}
+f1 = function(x, y) {
+  if (abs(x) < 10^-5 && abs(y) < 10^-5) {
+    return(0)
+  } else {
+    return((x*y) / sqrt(x^2 + y^2))
+  }
+}
+
+
+glplot3d(f1)
+```
+
+*Problem 3*
+
+```{r}
+f2 = function(x, y) {
+  if (abs(x) < 10^-5 && abs(y) < 10^-5) {
+    return(0)
+  } else {
+    return((x * y * (x^2 - y^2)) / (x^2 + y^2))
+  }
+}
+
+
+glplot3d(f2)
+```
+
+*Problem 4*
+
+(a)
+```{r}
+f3 = function(x, y) {
+  return( x^4 + y^4 - 4*x*y + 1 )
+}
+
+
+glplot3d(f3, lims = c(-2, 2, -2, 2))
+```
+
+(b)
+```{r}
+f4 = function(x, y) {
+  return( 0.5*(x^2 +1) - 2*y*(2*x + 7) + 3*x + 9*y^2 )
+}
+
+
+glplot3d(f4, lims = c(-2, 2, -2, 2))
+```
+
+(c)
+```{r}
+f5 = function(x, y) {
+  return( 3*x^3 + 3*x^2*y - y^3 - 15*x )
+}
+
+
+glplot3d(f5, lims = c(-2, 2, -2, 2))
+```
+
+*Problem 5*
+
+```{r}
+f6 = function(x, y) {
+  return( atan(1 / ((2*x-y)^2 + (x+y-3)^2 + 1)) )
+}
+
+
+glplot3d(f6, lims = c(-1, 4, -1, 4))
+```

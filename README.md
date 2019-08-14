@@ -1,6 +1,6 @@
-## E700 ― Mathematics for Economists (2019)
+# E700 ― Mathematics for Economists (2019)
 
-#### More Resources for the Befuddled
+## More Resources for the Befuddled
 
 > “Real mathematics must be justified as art if it can be justified at all.” 
 >

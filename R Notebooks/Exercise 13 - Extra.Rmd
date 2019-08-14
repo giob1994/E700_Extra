@@ -1,0 +1,64 @@
+---
+title: "Exercise 13 - Extra"
+output: 
+---
+
+```{r}
+library(ggplot2)
+library(ggsci)
+```
+
+*Problem 3*
+
+(a)
+```{r, fig.width=8, fig.height=3}
+x = seq(from = 0.4, to = 10^-5, length.out = 100)
+
+g = (sin(x)) / (x)
+
+data = data.frame(x, g)
+
+ggplot(data, aes(x = x, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+(b)
+```{r, fig.width=8, fig.height=3}
+x = seq(from = 0.4, to = 10^-5, length.out = 100)
+
+g = (cos(x)) / (1 + x)
+
+data = data.frame(x, g)
+
+ggplot(data, aes(x = x, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+(c)
+```{r, fig.width=8, fig.height=3}
+x = seq(from = 0.4, to = 10^-5, length.out = 100)
+
+g = (exp(x) - 1 - x) / (x^2)
+
+data = data.frame(x, g)
+
+ggplot(data, aes(x = x, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+(d)
+```{r, fig.width=8, fig.height=3}
+x = seq(from = 2, to = 1000, length.out = 100)
+
+g = (1 + 3/x)^x
+
+data = data.frame(x, g)
+
+ggplot(data, aes(x = x, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3") +
+  geom_hline(yintercept = exp(3), linetype = "dotted")
+```
