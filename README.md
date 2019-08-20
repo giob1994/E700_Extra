@@ -24,7 +24,7 @@
 
 ### Part 0 ― Preliminaries
 
-1. [The World of Mathematical Reality](https://www.youtube.com/watch?v=V1gT2f3Fe44) by Paul Lockhart, *if you want a small taste of why math-people like math in itself, and maybe you should too!*
+1. [The World of Mathematical Reality](https://www.youtube.com/watch?v=V1gT2f3Fe44) by Paul Lockhart, *if you want a small taste of why math-people like math in itself - and maybe you should too!*
 2. [Understanding Mathematics](http://www.math.utah.edu/~pa/math.html), a study guide by [Peter Alfeld](http://www.math.utah.edu/~pa/), *in case you feel lost.*
 3. [3blue1brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw/playlists), *for exceptionally accessible videos on a wide range of topics.*
 4. [Understanding Mathematics](https://github.com/nelson-brochado/understanding-math), *for more resources on the basics of understanding mathematics and its peculiarities.*
@@ -37,17 +37,17 @@
 
 For a precise introductory treatment:
 
-- [Basic Concepts of Mathematics](http://www.trillia.com/zakon1.html) - Elias Zakon
+- [Basic Concepts of Mathematics](http://www.trillia.com/zakon1.html) by Elias Zakon
 
 For a more intensive discussion:
 
-- [An Introduction to Set Theory](http://www.math.toronto.edu/weiss/set_theory.pdf) - William A. R. Weiss
+- [An Introduction to Set Theory](http://www.math.toronto.edu/weiss/set_theory.pdf) by William A. R. Weiss
 
 ---
 
-> As a side note, know that E700 covers a number of topics and concepts which cast a wide web of mathematical tools ― many of which we must posses to understand modern economic theory and practice in detail. Thus all further resources have some degree of "intersection": you will find topics from one part also presented in a resource listed for another part. 
+> As a side note, know that E700 covers a number of topics and concepts which cast a wide web of mathematical tools ― many of which we must posses to understand modern economic theory and practice in detail. Thus all of the following resources have some degree of "intersection": you will find topics from one part also presented in a source listed for another part. 
 >
-> Use whichever resource you consider best *for you* without thinking too much about issue of "is this the right reference?".
+> Use whichever resource you consider best *for your learning*. **This said, the material seen in class should *always* be the reference point.**
 
 ---
 
@@ -55,7 +55,11 @@ For a more intensive discussion:
 
 **Cores**: metric & normed spaces, convergence of sequences, continuity, compactness of sets.
 
-These topics fall mostly under the umbrella of *topology*, thus you can take a look at:
+These topics fall mostly under the umbrella of *topology*, and you can take a look at:
+
+- [Understanding Analysis](http://cms.dm.uba.ar/academico/materias/verano2012/taller_de_calculo_avanzado/Libros/Abbott%20-%20Understanding%20Analysis.pdf) by Stephen Abbott - Chapters 2, 3, 4, *is the most accessible resource for this Part*.
+
+- [Principles of Mathematical Analysis](https://notendur.hi.is/vae11/%C3%9Eekking/principles_of_mathematical_analysis_walter_rudin.pdf) by Walter Rudin - Chapters 1, 2, 3, 4.
 
 - [General Topology](https://webusers.imj-prg.fr/~pierre.schapira/lectnotes/Topo.pdf) - Chapters 1, 2, 3.
 - [Modern Real Analysis](http://www.math.purdue.edu/~torres/pubs/Modern-real-analysis.pdf) - Chapter 3.
@@ -73,7 +77,7 @@ For a more general overview (YouTube):
 
 Rigorous treatment of *linear algebra* (vectors, matrices and related things) can be found in:
 
-- [Linear Algebra](https://web.calpoly.edu/~jborzell/Courses/Year%2010-11/Fall%202010/Petersen-Linear_Algebra-Math_306.pdf) by - Chapters 1, 2.
+- [Linear Algebra](https://web.calpoly.edu/~jborzell/Courses/Year%2010-11/Fall%202010/Petersen-Linear_Algebra-Math_306.pdf) by Peter Petersen - Chapters 1, 2.
 - [Linear Algebra](http://joshua.smcvt.edu/linearalgebra/#current_version) by Jim Hefferon, *a very complete book*.
 
 However because linear algebra is not always intuitive, especially in high dimensions, these resources are more accessible:
@@ -91,13 +95,19 @@ Videos (YouTube):
 
 **Cores**: multivariable differentiation, constrained/unconstrained optimization.
 
-General resources (this topic is also easily covered on Wikipedia, e.g.) can be:
+Regarding *differentiation* (this topic is also easily covered on Wikipedia, e.g.) take a look at:
+
+- [Principles of Mathematical Analysis](https://notendur.hi.is/vae11/%C3%9Eekking/principles_of_mathematical_analysis_walter_rudin.pdf) by Walter Rudin - Chapter 5.
 
 - [The Calculus of Functions of Several Variables](http://www.synechism.org/wp/the-calculus-of-functions-of-several-variables/) - Chapters 2, 3.
 - [Active Calculus (Multivariable)](https://activecalculus.org/ACM.html) 
 - [Mathematics for Economists](https://primo.bib.uni-mannheim.de/permalink/f/19ojnqi/MAN_ALMA21119931390002561) - Part III.
 
-MIT Professor Gilbert Strang recorded masterful lectures on calculus, and you can find them (and the accompanying book) on MIT OpenCourseware:
+While for *optimization* (in Economics we usually consider a pretty specific subset of optimization techniques) it is best to follow:
+
+- [Mathematics for Economists](https://primo.bib.uni-mannheim.de/permalink/f/19ojnqi/MAN_ALMA21119931390002561) - Part IV.
+
+Lastly, MIT Professor Gilbert Strang recorded masterful lectures on calculus, and you can find them (and the accompanying book) on MIT OpenCourseware:
 
 -  [Calculus by G. Strang](https://ocw.mit.edu/resources/res-18-001-calculus-online-textbook-spring-2005/textbook/) 
 
@@ -105,13 +115,17 @@ MIT Professor Gilbert Strang recorded masterful lectures on calculus, and you ca
 
 ### Foreword
 
-Two topics that are **not** covered in E700 are *measure theory* and *integration*. By and large these are essentials to understand most equations found in probability theory, statistics, macro and micro theory, and many more subfields. If you have a minimum of comfort with things like
+Two topics that are **not** covered in E700 are ***measure theory*** and ***integration***. By and large these are essential to understand most equations found in probability theory, statistics, macro and micro theory, and many more subfields. If you have a minimum of comfort with things like
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\dpi{100}&space;\LARGE&space;\int_{0}^{&plus;\infty}&space;\frac{1}{\sqrt{2&space;\pi}}&space;\,&space;e^{-x^2}&space;dx" target="_blank"><img src="https://latex.codecogs.com/png.latex?\dpi{80}&space;\LARGE&space;\int_{0}^{&plus;\infty}&space;\frac{1}{\sqrt{2&space;\pi}}&space;\,&space;e^{-x^2}&space;dx" title="\LARGE \int_{0}^{+\infty} \frac{1}{\sqrt{2 \pi}} \, e^{-x^2} dx" /></a>
 
 then you should be fine.
 
-However, good resources are:
+However, good resources on these topics are:
+
+- [Understanding Analysis](http://cms.dm.uba.ar/academico/materias/verano2012/taller_de_calculo_avanzado/Libros/Abbott%20-%20Understanding%20Analysis.pdf) by Stephen Abbott - Chapters 6, 7, *for a simple introduction to the Riemann integral*.
+
+- [Principles of Mathematical Analysis](https://notendur.hi.is/vae11/%C3%9Eekking/principles_of_mathematical_analysis_walter_rudin.pdf) by Walter Rudin - Chapters 6, 11.
 
 - [An introduction to measure theory](https://terrytao.files.wordpress.com/2011/01/measure-book1.pdf) by Terence Tao, *one of the great contemporary mathematicians.*
 - [A Crash Course on the Lebesgue Integral and Measure Theory](https://www.gold-saucer.org/math/lebesgue/lebesgue.pdf)
