@@ -2,6 +2,15 @@
 
 ## More Resources for the Befuddled
 
+<figure>
+    <div style='max-height: 200px; overflow: hidden;'>
+       <img src='https://cdn.pixabay.com/photo/2016/04/25/15/53/mandelbulb-1352261_960_720.jpg' alt='missing' style="width: 100%; margin-top: -10em; object-fit: contain;"/>
+    </div>
+    <figcaption style="text-align: right;">
+    	<a href="https://pixabay.com/illustrations/mandelbulb-fractal-sci-fi-1352261/">Mandelbulb Fractal</a>
+        </figcaption>
+</figure>
+
 > “Real mathematics must be justified as art if it can be justified at all.” 
 >
 > ​	― *G.H. Hardy, A Mathematician's Apology*
