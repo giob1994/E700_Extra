@@ -11,6 +11,8 @@
         </figcaption>
 </figure>
 
+---
+
 > “Real mathematics must be justified as art if it can be justified at all.” 
 >
 > ​	― *G.H. Hardy, A Mathematician's Apology*
