@@ -1,0 +1,62 @@
+---
+title: "Exercise 6 - Extra"
+output: 
+---
+
+*Problem 3*
+
+(i)
+```{r, fig.width=8, fig.height=3}
+n = seq(from = 1, to = 10^2.5, length.out = 100)
+
+g = n / (n + 1)
+
+data = data.frame(n, g)
+
+ggplot(data, aes(x = n, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+(ii)
+```{r, fig.width=8, fig.height=3}
+n = seq(from = 1, to = 10^2.5, length.out = 100)
+
+g = (2 - n^3) / (10*n^2 + n)
+
+data = data.frame(n, g)
+
+ggplot(data, aes(x = n, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+(iii)
+```{r, fig.width=8, fig.height=3}
+n = seq(from = 1, to = 10^2, length.out = 100)
+
+g = (n^3 + sqrt(n)) / (n^2 * (n^2 - 1))
+
+data = data.frame(n, g)
+
+ggplot(data, aes(x = n, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+(iv)
+```{r, fig.width=8, fig.height=3}
+n = seq(from = 1, to = 10^2, length.out = 100)
+
+g = (n + 1)^2 / n - n^2 / (n + 1)
+
+data = data.frame(n, g)
+
+ggplot(data, aes(x = n, y = g)) +
+  geom_line(linetype = "dashed") + geom_point(aes(color = g)) + scale_x_log10() +
+  scale_colour_gradient(low = "dodgerblue", high="orangered3")
+```
+
+
+
+

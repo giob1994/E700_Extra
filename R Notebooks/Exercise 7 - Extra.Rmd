@@ -1,6 +1,6 @@
 ---
 title: "Exercise 7 - Extra"
-output: 
+output:
 ---
 
 ```{r}
