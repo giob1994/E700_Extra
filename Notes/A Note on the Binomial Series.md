@@ -1,6 +1,6 @@
 # A Note on the Binomial Series
 
-The [binomial series](https://www.encyclopediaofmath.org/index.php/Binomial_series) 
+The [binomial series](https://www.encyclopediaofmath.org/index.php/Binomial_series)  
 
 $$ \left( 1 + x \right)^n = \sum_{i=0}^n {n \choose i} 1^i x^{n-i} $$
 
@@ -36,6 +36,5 @@ which yields the result. Indeed if we wanted we could tighten the "$\geq$" to a 
 
 #### Additional Sources
 
-[1]: https://www.encyclopediaofmath.org/index.php/Binomial_coefficients	"Binomial Coefficient"
-[2]: https://www.encyclopediaofmath.org/index.php/Binomial_series	"Binomial Series"
-
+- https://www.encyclopediaofmath.org/index.php/Binomial_coefficients	"Binomial Coefficient"
+- https://www.encyclopediaofmath.org/index.php/Binomial_series	"Binomial Series"
