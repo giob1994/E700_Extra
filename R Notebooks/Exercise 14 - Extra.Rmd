@@ -31,7 +31,14 @@ glplot3d = function (f, lims = c(-1,1,-1,1), nstep = 250) {
   colorlut = heat.colors(zlen) # height color lookup table
   col = colorlut[round((z - zlim[1])/(zlim[2] - zlim[1]) * zlen) + 1] # assign colors to heights for each point
 
-  persp3d(x, y, z, color = col, back = "filled")
+  persp3d(x, y, z, color = col, back = "filled", alpha = 1)
+  lines <- contourLines(x, y, z)
+  for (i in seq_along(lines)) {
+    x <- lines[[i]]$x
+    y <- lines[[i]]$y
+    z <- rep(lines[[i]]$level, length(x))
+  lines3d(x, y, z, col = "black")
+}
 }
 ```
 
